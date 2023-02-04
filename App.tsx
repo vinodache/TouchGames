@@ -73,10 +73,7 @@ const callable1 = () => {
   )
 }
 const showButton = (i:string) => {
-  var a:Array<JSX.Element> = []
-  for(var b:number=0;b<5;b++)
-    a.push(callable1())
-  return(a)
+  return(numbers.map(callable1))
 }
 
 function App(): JSX.Element {
